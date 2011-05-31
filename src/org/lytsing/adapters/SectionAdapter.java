@@ -74,7 +74,7 @@ abstract public class SectionAdapter extends BaseAdapter {
     }
 
     public void deactivate() {
-        if (mDeactivated == false) {
+        if (!mDeactivated) {
             mDeactivated = true;
             notifyDataSetChanged();
         }
@@ -85,7 +85,7 @@ abstract public class SectionAdapter extends BaseAdapter {
      * Adapter.
      */
     public int getCount() {
-        if (mDeactivated != false) {
+        if (mDeactivated) {
             return 0;
         } else {
             return mCount + 1; // add one for header
