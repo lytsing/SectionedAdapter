@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 package org.lytsing.adapters;
 
 import android.content.Context;
@@ -24,10 +23,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * abstract SectionAdapter, difference from
- * cw-advandroid/ListView/Sections/src/com/commonsware/android/listview/SectionedAdapter.java
- * just decompile from Vending.apk :-)
- *
+ * abstract SectionAdapter
  */
 abstract public class SectionAdapter extends BaseAdapter {
     protected int mCount;
